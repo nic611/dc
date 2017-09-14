@@ -1,0 +1,132 @@
+/**
+ * Created by 张森峰 on 2017/5/4.
+ */
+ @import url(../../../assets/css/config.css);
+
+.flight{
+  user-select: none;
+  white-space: nowrap;
+
+  &-message{
+    & .hidden{
+      display: none;
+    }
+    & .transform{
+      transform: rotate(180deg);
+    }
+    &-border{
+      background-color: #fff;
+      border-bottom: 1px solid #dedede;
+    }
+    &-noborder{
+      background-color: #fff;
+      border-bottom: none;
+    }
+    &-arrowright{
+      &-icon1{
+        width: 1.2rem;
+        border-bottom: 2px solid #adadad;
+        position: relative;
+        bottom: 1rem;
+
+        &:after{
+          content: '';
+          display: block;
+          height: 1.5rem;
+          width: 2px;
+          background-color: #adadad;
+          transform: rotate(315deg);
+          position: relative;
+          top: 1.1rem;
+          left: 1.5rem;
+        }
+      }
+      &-icon2{
+        width: 1.7rem;
+        border-bottom: 2px solid #adadad;
+        position: relative;
+        bottom: 0.5rem;
+
+        &:after{
+          content: '';
+          display: block;
+          height: 1.5rem;
+          width: 2px;
+          background-color: #adadad;
+          transform: rotate(315deg);
+          position: relative;
+          top: 1.1rem;
+          left: 2rem;
+        }
+      }
+    }
+  }
+  &-cabin-list{  
+    &-item{
+      background-color: #fff;
+      border: 1px solid #dedede;
+
+      &>div:last-of-type{
+        color: $color-accent;
+      }
+      &-price{
+        color: $color-accent;
+      }
+      &-overflow{
+        overflow: auto;
+      }
+      &-button{
+        height: 1.3rem;
+        width: 1.3rem;
+        background-color: $color-accent;
+        line-height: 1.3rem;
+        color: #fff;
+      }
+    }
+  }
+  & .f-ldark{
+    color: #888;
+  }
+  &-footbar{
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.7rem;
+    background-color: #483A31;
+    opacity: 0.9;
+    color: #fff;
+  }
+  &-book-car-view{
+    &-text{
+      white-space: nowrap;
+      overflow: auto;
+    }
+    &-grey{
+      color: #adadad;
+    }
+    &-bottom{
+      border-top: 1px solid #dedede;
+    }
+    &-button1{
+      cursor: pointer;
+      color: #adadad;
+      border: 1px solid #adadad;
+      height: 1.3rem;
+      background-color: #ffffff;
+      @mixin fontSize 18;
+      border-radius: 0.15rem;
+      width: 45%;
+    }
+    &-button2{
+      cursor: pointer;
+      color: $color-white;
+      height: 1.3rem;
+      background-color: $color-accent;
+      @mixin fontSize 18;
+      border-radius: 0.15rem;
+      width: 45%;
+    }
+  }
+}

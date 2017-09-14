@@ -1,0 +1,10 @@
+@import url(../../../assets/css/config.css);
+.book-bankcard-view {
+    height: 30%;
+}
+.book-bankcard-view ul li{
+    border-bottom: solid 1px #cccccc;
+}
+.book-bankcard-view ul li:last-child{
+    border-bottom: none;
+}

@@ -1,0 +1,79 @@
+.account-one{
+  background-color: #493a30;
+  color: #ffffff;
+}
+.account-oneT{
+  border-bottom: dashed 1px #ffffff;
+
+  & div p{
+    white-space: nowrap;
+  }
+}
+.account-oneT-m{
+  position: relative;
+}
+.icon-from-to , .account-oneT-m{
+  width: 3.1rem;
+  height: 3.1rem;
+}
+.account-oneT-mp1{
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.account-oneT-mp2{
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.p-color{
+  color: #ca403d;
+}
+ .account-twoT{
+  border-bottom: solid 1px #f4f4f4;
+
+  & .f-ldark{
+    color: #adadad;
+  }
+}
+.account-twoB{
+  border-top: solid 1px #f4f4f4;
+}
+.account-ul{
+  list-style: none;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+.account-ul li{
+  list-style: none;
+  margin-right: 0.8rem;
+  margin-bottom: 0.35rem;
+}
+
+
+.pay-hint{
+  background-color: #fcf7f1;
+  color: #ca403d;
+}
+.pay-middle{
+  border-bottom: solid 1px #cccccc;
+}
+.overBtn{
+  cursor: pointer;
+  color: #818181;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: calc(0.03rem * 18);
+  border-radius: 0.15rem;
+  border: solid 1px #818181;
+}
+.acc-hide{
+  display: none;
+}

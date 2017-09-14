@@ -1,0 +1,6 @@
+.book-form-item > div{
+  margin: 0.6rem 0;
+  .book-city, .book-date, .book-pick, .book-cabin{
+  	border-bottom:1px solid #585858;
+  }
+}

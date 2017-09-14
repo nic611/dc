@@ -1,0 +1,32 @@
+@import url(../../assets/css/config.css);
+.tabs{
+  .tabs-menu{
+    display: flex;
+    align-items:center;
+    border-radius: 0.15rem 0.15rem 0 0;
+
+    .tabs-menu-item{
+      flex: 1 1 auto;
+      height: 1.2rem;
+      margin-right: 0.03125rem;
+      font-weight: bold;
+
+      a{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        width: 100%;
+        height: 100%;
+        color: $color-white;
+        background-color: $color-accent;
+        border-radius: 0.15rem 0.15rem 0 0;
+      }
+    }
+    .tabs-menu-item.is-active{
+      a{
+        color: $color-accent;
+        background-color: $color-white;
+      }
+    }
+  }
+}

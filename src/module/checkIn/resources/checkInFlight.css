@@ -1,0 +1,35 @@
+.check-name{
+  border-bottom: solid 1px #cccccc;
+  padding: 0.3rem;
+}
+.check-info{
+  border-bottom: dashed 1px #cccccc;
+}
+.check-info:last-child{
+  border-bottom: none;
+}
+.check-state{
+  color: #ca403d;
+}
+.check-to ,.icon-from-to , .icon-from-to svg{
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.icon-right{
+  width: 0.3rem;
+  height: 0.35rem;
+}
+
+
+.flight-box{
+  position: relative;
+}
+.flight-air{
+  position: absolute;
+  top:2rem;
+  left: 0;
+  width: 100%;
+}
+.flight-p{
+  margin-right: 2.2rem;
+}

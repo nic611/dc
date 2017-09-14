@@ -1,0 +1,20 @@
+/* 全局变量 */
+$color-primary: #483A31;
+$color-accent: #C83F3E;
+$color-font-base: #333;
+$color-font-light: #FFFFFF;
+$color-font-dark: #404040;
+$color-font-light-dark: #CED1D3;
+$color-bg: #F0F3F5;
+$color-white: #FFFFFF;
+$color-bar-light: #F6F6F6;
+$color-bar-light-font: #8D8D8D;
+$color-border: #EDEDED;
+
+$app-bar-height: 1.3rem;
+$footer-bar-height: 1.45rem;
+
+/* 定义字体大小的minxin 将px转为rem */
+@define-mixin fontSize $v {
+  font-size: calc(0.03rem * $v);
+}

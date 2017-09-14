@@ -1,0 +1,74 @@
+/**
+ * Created by 张森峰 on 2017/4/27.
+ */
+@import url(../../../assets/css/config.css);
+
+.user{
+  font-family: 'Microsoft YaHei';
+  user-select: none;
+  color: $color-font-dark;
+
+  &-header{
+    background-image: url(../../../assets/img/loginBackground.jpg);
+    border-bottom: 1px solid $color-border;
+
+    &-p{
+      text-align: center;
+    }
+    &-button{
+      width: 4rem;
+      margin: 0 auto;
+      padding-bottom: 2.04rem;
+    }
+  }
+  &-tab{
+    border-bottom: 1px solid $color-border;
+  }
+  &-href{
+    background-color: $color-font-light;
+    border-bottom: 1px solid $color-border;
+
+    &-list{
+      border-bottom: 1px solid $color-border;
+
+      &-icon{
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &-logged{
+    background-image: url(../../../assets/img/loginBackground.jpg);
+    &-header{
+      border-bottom: 1px solid $color-border;
+      box-shadow: 0 2px 5px $color-font-light-dark;
+
+      &-icon{
+        position: absolute;
+        right: 1.5rem;
+        top: 0rem;
+        height: 2.45rem;
+        width: 2.45rem;
+      }
+      &-message{
+        border-top: 1px solid #aaaaaa;
+        border-bottom: 1px solid #aaaaaa;
+        &-border{
+          border-left: 0.13rem solid $color-accent;
+        }
+        &>div{
+          background-color: $color-font-light;
+        }
+      }
+    }
+  }
+  &-logout{
+    text-align: center;
+    background-color: $color-font-light;
+    border-bottom: 1px solid $color-border;
+    border-top: 1px solid $color-border;
+
+    &.hidden{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.check-input{
+  position: relative;
+  width: 70%;
+  padding-bottom: 0.35rem;
+  /*border-bottom: solid 1px #cccccc;*/
+}
+.check-input input{
+  width: 90%;
+  height: 0.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  text-indent: 0.1rem;
+}
+.check-input:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+}
+.check-btn{
+  position: absolute;
+  bottom: 0.55rem;
+  left: 0;
+  width: 100%;
+}

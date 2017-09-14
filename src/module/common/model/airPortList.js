@@ -1,0 +1,1962 @@
+const airPortList = [{
+  'index': '3',
+  'isHot': '0',
+  'airPortCode': 'HDG',
+  'airPortName': '邯郸机场',
+  'airPortPinYing': 'HANDAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HDG',
+  'cityName': '邯郸',
+  'cityPinYin': 'HANDAN'
+}, {
+  'index': '5',
+  'isHot': '0',
+  'airPortCode': 'CIH',
+  'airPortName': '王村机场',
+  'airPortPinYing': 'CHANGZHI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CIH',
+  'cityName': '长治',
+  'cityPinYin': 'CHANGZHI'
+}, {
+  'index': '6',
+  'isHot': '0',
+  'airPortCode': 'WUT',
+  'airPortName': '五台山机场',
+  'airPortPinYing': 'XINZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WUT',
+  'cityName': '忻州',
+  'cityPinYin': 'XIINZHOU'
+}, {
+  'index': '7',
+  'isHot': '0',
+  'airPortCode': 'PEK',
+  'airPortName': '首都国际机场',
+  'airPortPinYing': 'BEIJING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'PEK',
+  'cityName': '北京',
+  'cityPinYin': 'BEIJING'
+}, {
+  'index': '8',
+  'isHot': '0',
+  'airPortCode': 'NAY',
+  'airPortName': '南苑机场',
+  'airPortPinYing': 'NANYUAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NAY',
+  'cityName': '北京',
+  'cityPinYin': 'BEIJING'
+}, {
+  'index': '9',
+  'isHot': '1',
+  'airPortCode': 'SJW',
+  'airPortName': '正定国际机场',
+  'airPortPinYing': 'SHIJIAZHUANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SHI',
+  'cityName': '石家庄',
+  'cityPinYin': 'SHIJIAZHUANG'
+}, {
+  'index': '10',
+  'isHot': '0',
+  'airPortCode': 'TVS',
+  'airPortName': '三女河机场',
+  'airPortPinYing': 'SANNVHE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TVS',
+  'cityName': '唐山',
+  'cityPinYin': 'TANGSHAN'
+}, {
+  'index': '11',
+  'isHot': '0',
+  'airPortCode': 'TYN',
+  'airPortName': '武宿国际机场',
+  'airPortPinYing': 'TAIYUAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TYN',
+  'cityName': '太原',
+  'cityPinYin': 'TAIYUAN'
+}, {
+  'index': '12',
+  'isHot': '0',
+  'airPortCode': 'DAT',
+  'airPortName': '云冈机场',
+  'airPortPinYing': 'DATONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DAT',
+  'cityName': '大同',
+  'cityPinYin': 'DATONG'
+}, {
+  'index': '13',
+  'isHot': '0',
+  'airPortCode': 'YCU',
+  'airPortName': '关公机场',
+  'airPortPinYing': 'GUANGONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YCU',
+  'cityName': '运城',
+  'cityPinYin': 'GUANGONG'
+}, {
+  'index': '14',
+  'isHot': '0',
+  'airPortCode': 'HET',
+  'airPortName': '白塔国际机场',
+  'airPortPinYing': 'HOHHOT',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HET',
+  'cityName': '呼和浩特',
+  'cityPinYin': 'HUHEHAOTE'
+}, {
+  'index': '15',
+  'isHot': '0',
+  'airPortCode': 'HLD',
+  'airPortName': '东山国际机场',
+  'airPortPinYing': 'HAILAR',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HLD',
+  'cityName': '海拉尔',
+  'cityPinYin': 'HAILAER'
+}, {
+  'index': '16',
+  'isHot': '0',
+  'airPortCode': 'CIF',
+  'airPortName': '玉龙机场',
+  'airPortPinYing': 'CHIFENG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CIF',
+  'cityName': '赤峰',
+  'cityPinYin': 'CHIFENG'
+}, {
+  'index': '17',
+  'isHot': '0',
+  'airPortCode': 'NZH',
+  'airPortName': '西郊国际机场',
+  'airPortPinYing': 'MANZHOULI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NZH',
+  'cityName': '满洲里',
+  'cityPinYin': 'MANZHOULI'
+}, {
+  'index': '18',
+  'isHot': '0',
+  'airPortCode': 'HLH',
+  'airPortName': '乌兰浩特机场',
+  'airPortPinYing': 'ULANHOT',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HLH',
+  'cityName': '乌兰浩特',
+  'cityPinYin': 'WULANHAOTE'
+}, {
+  'index': '19',
+  'isHot': '0',
+  'airPortCode': 'XIL',
+  'airPortName': '锡林浩特机场',
+  'airPortPinYing': 'XILINHOT',
+  'countryCode': 'CN',
+  'airPortCodeE': 'XIL',
+  'cityName': '锡林浩特',
+  'cityPinYin': 'XILINHAOTE'
+}, {
+  'index': '20',
+  'isHot': '0',
+  'airPortCode': 'WUA',
+  'airPortName': '乌海机场',
+  'airPortPinYing': 'WUHAI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WUA',
+  'cityName': '乌海',
+  'cityPinYin': 'WUHAI'
+}, {
+  'index': '21',
+  'isHot': '0',
+  'airPortCode': 'BAV',
+  'airPortName': '二里半机场',
+  'airPortPinYing': 'BAOTOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'BAV',
+  'cityName': '包头',
+  'cityPinYin': 'BAOTOU'
+}, {
+  'index': '22',
+  'isHot': '0',
+  'airPortCode': 'TGO',
+  'airPortName': '通辽机场',
+  'airPortPinYing': 'TONGLIAO',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TGO',
+  'cityName': '通辽',
+  'cityPinYin': 'TONGLIAO'
+}, {
+  'index': '23',
+  'isHot': '0',
+  'airPortCode': 'LXI',
+  'airPortName': '林西机场',
+  'airPortPinYing': 'LINXI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LXI',
+  'cityName': '林西',
+  'cityPinYin': 'LINXI'
+}, {
+  'index': '24',
+  'isHot': '0',
+  'airPortCode': 'DSN',
+  'airPortName': '伊金霍洛国际机场',
+  'airPortPinYing': 'Dongsheng',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DSN',
+  'cityName': '鄂尔多斯',
+  'cityPinYin': 'EERDUOSI'
+}, {
+  'index': '25',
+  'isHot': '0',
+  'airPortCode': 'ERL',
+  'airPortName': '赛乌苏国际机场',
+  'airPortPinYing': 'ERLIANHAOTE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ERL',
+  'cityName': '二连浩特',
+  'cityPinYin': 'ERLIANHAOTE'
+}, {
+  'index': '26',
+  'isHot': '0',
+  'airPortCode': 'YIE',
+  'airPortName': '伊尔施机场',
+  'airPortPinYing': 'AERSHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YIE',
+  'cityName': '阿尔山',
+  'cityPinYin': 'AERSHAN'
+}, {
+  'index': '27',
+  'isHot': '0',
+  'airPortCode': 'RLK',
+  'airPortName': '天吉泰机场',
+  'airPortPinYing': 'BAYANZHUOER',
+  'countryCode': 'CN',
+  'airPortCodeE': 'RLK',
+  'cityName': '巴彦淖尔',
+  'cityPinYin': 'BAYANNAOER'
+}, {
+  'index': '28',
+  'isHot': '0',
+  'airPortCode': 'SHA',
+  'airPortName': '虹桥机场',
+  'airPortPinYing': 'SHANGHAI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SHA',
+  'cityName': '上海虹桥',
+  'cityPinYin': 'SHANGHAIHONGQIAO'
+}, {
+  'index': '29',
+  'isHot': '0',
+  'airPortCode': 'PVG',
+  'airPortName': '浦东国际机场',
+  'airPortPinYing': 'PUDONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SHA',
+  'cityName': '上海浦东',
+  'cityPinYin': 'SHANGHAIPUDONG'
+}, {
+  'index': '30',
+  'isHot': '1',
+  'airPortCode': 'NKG',
+  'airPortName': '禄口机场',
+  'airPortPinYing': 'NANJING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NKG',
+  'cityName': '南京',
+  'cityPinYin': 'NANJING'
+}, {
+  'index': '31',
+  'isHot': '1',
+  'airPortCode': 'NTG',
+  'airPortName': '兴东机场',
+  'airPortPinYing': 'NANTONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NTG',
+  'cityName': '南通',
+  'cityPinYin': 'NANTONG'
+}, {
+  'index': '32',
+  'isHot': '0',
+  'airPortCode': 'WUX',
+  'airPortName': '硕放国际机场',
+  'airPortPinYing': 'WUXI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WUX',
+  'cityName': '无锡',
+  'cityPinYin': 'WUXI'
+}, {
+  'index': '33',
+  'isHot': '0',
+  'airPortCode': 'CZX',
+  'airPortName': '奔牛国际机场',
+  'airPortPinYing': 'CHANGZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CZX',
+  'cityName': '常州',
+  'cityPinYin': 'CHANGZHOU'
+}, {
+  'index': '34',
+  'isHot': '0',
+  'airPortCode': 'XUZ',
+  'airPortName': '观音国际机场',
+  'airPortPinYing': 'XUZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'XUZ',
+  'cityName': '徐州',
+  'cityPinYin': 'XUZHOU'
+}, {
+  'index': '35',
+  'isHot': '1',
+  'airPortCode': 'YNZ',
+  'airPortName': '南洋机场',
+  'airPortPinYing': 'YANCHENG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YNZ',
+  'cityName': '盐城',
+  'cityPinYin': 'YANCHENG'
+}, {
+  'index': '36',
+  'isHot': '0',
+  'airPortCode': 'LYG',
+  'airPortName': '白塔埠机场',
+  'airPortPinYing': 'LIANYUNGANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LYG',
+  'cityName': '连云港',
+  'cityPinYin': 'LIANYUNGANG'
+}, {
+  'index': '37',
+  'isHot': '0',
+  'airPortCode': 'SZV',
+  'airPortName': '光福机场',
+  'airPortPinYing': 'SUZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SZV',
+  'cityName': '苏州',
+  'cityPinYin': 'SUZHOU'
+}, {
+  'index': '38',
+  'isHot': '0',
+  'airPortCode': 'HIA',
+  'airPortName': '涟水机场',
+  'airPortPinYing': 'HUAIAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HIA',
+  'cityName': '淮安',
+  'cityPinYin': 'HUAIAN'
+}, {
+  'index': '39',
+  'isHot': '0',
+  'airPortCode': 'YTY',
+  'airPortName': '泰州机场',
+  'airPortPinYing': 'YANGZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YTY',
+  'cityName': '扬州',
+  'cityPinYin': 'YANGZHOU'
+}, {
+  'index': '40',
+  'isHot': '1',
+  'airPortCode': 'HGH',
+  'airPortName': '萧山国际机场',
+  'airPortPinYing': 'HANGZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HGH',
+  'cityName': '杭州',
+  'cityPinYin': 'HANGZHOU'
+}, {
+  'index': '41',
+  'isHot': '1',
+  'airPortCode': 'NGB',
+  'airPortName': '栎社国际机场',
+  'airPortPinYing': 'NINGBO',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NGB',
+  'cityName': '宁波',
+  'cityPinYin': 'NINGBO'
+}, {
+  'index': '42',
+  'isHot': '0',
+  'airPortCode': 'WNZ',
+  'airPortName': '龙湾国际机场',
+  'airPortPinYing': 'WENZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WNZ',
+  'cityName': '温州',
+  'cityPinYin': 'WENZHOU'
+}, {
+  'index': '43',
+  'isHot': '0',
+  'airPortCode': 'HSN',
+  'airPortName': '普陀山机场',
+  'airPortPinYing': 'ZHOUSHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HSN',
+  'cityName': '舟山',
+  'cityPinYin': 'ZHOUSHAN'
+}, {
+  'index': '44',
+  'isHot': '1',
+  'airPortCode': 'HYN',
+  'airPortName': '路桥机场',
+  'airPortPinYing': 'LUQIAO',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HYN',
+  'cityName': '台州',
+  'cityPinYin': 'TAIZHOU'
+}, {
+  'index': '45',
+  'isHot': '0',
+  'airPortCode': 'JUZ',
+  'airPortName': '衢州机场',
+  'airPortPinYing': 'QUZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JUZ',
+  'cityName': '衢州',
+  'cityPinYin': 'QUZHOU'
+}, {
+  'index': '46',
+  'isHot': '0',
+  'airPortCode': 'YIW',
+  'airPortName': '义乌机场',
+  'airPortPinYing': 'YIWU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YIW',
+  'cityName': '义乌',
+  'cityPinYin': 'YIWU'
+}, {
+  'index': '47',
+  'isHot': '0',
+  'airPortCode': 'TNA',
+  'airPortName': '遥墙国际机场',
+  'airPortPinYing': 'JINAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TNA',
+  'cityName': '济南',
+  'cityPinYin': 'JINAN'
+}, {
+  'index': '48',
+  'isHot': '0',
+  'airPortCode': 'TAO',
+  'airPortName': '流亭国际机场',
+  'airPortPinYing': 'QINGDAO',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TAO',
+  'cityName': '青岛',
+  'cityPinYin': 'QINGDAO'
+}, {
+  'index': '49',
+  'isHot': '0',
+  'airPortCode': 'WEH',
+  'airPortName': '大水泊国际机场',
+  'airPortPinYing': 'WEIHAI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WEH',
+  'cityName': '威海',
+  'cityPinYin': 'WEIHAI'
+}, {
+  'index': '50',
+  'isHot': '1',
+  'airPortCode': 'YNT',
+  'airPortName': '蓬莱国际机场',
+  'airPortPinYing': 'YANTAI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YNT',
+  'cityName': '烟台',
+  'cityPinYin': 'YANTAI'
+}, {
+  'index': '51',
+  'isHot': '0',
+  'airPortCode': 'LYI',
+  'airPortName': '临沂机场',
+  'airPortPinYing': 'LINYI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LYI',
+  'cityName': '临沂',
+  'cityPinYin': 'LINYI'
+}, {
+  'index': '52',
+  'isHot': '0',
+  'airPortCode': 'WEF',
+  'airPortName': '潍坊机场',
+  'airPortPinYing': 'WEIFANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WEF',
+  'cityName': '潍坊',
+  'cityPinYin': 'WEIFANG'
+}, {
+  'index': '53',
+  'isHot': '0',
+  'airPortCode': 'DOY',
+  'airPortName': '胜利机场',
+  'airPortPinYing': 'DONGYING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DOY',
+  'cityName': '东营',
+  'cityPinYin': 'DONGYING'
+}, {
+  'index': '54',
+  'isHot': '0',
+  'airPortCode': 'JNG',
+  'airPortName': '曲阜机场',
+  'airPortPinYing': 'JINING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JNG',
+  'cityName': '济宁',
+  'cityPinYin': 'JINING'
+}, {
+  'index': '55',
+  'isHot': '1',
+  'airPortCode': 'FOC',
+  'airPortName': '长乐国际机场',
+  'airPortPinYing': 'FUZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'FOC',
+  'cityName': '福州',
+  'cityPinYin': 'FUZHOU'
+}, {
+  'index': '56',
+  'isHot': '0',
+  'airPortCode': 'XMN',
+  'airPortName': '高崎国际机场',
+  'airPortPinYing': 'XIAMEN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'XMN',
+  'cityName': '厦门',
+  'cityPinYin': 'XIAMEN'
+}, {
+  'index': '57',
+  'isHot': '0',
+  'airPortCode': 'JJN',
+  'airPortName': '晋江国际机场',
+  'airPortPinYing': 'QUANZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JJN',
+  'cityName': '泉州',
+  'cityPinYin': 'QUANZHOU'
+}, {
+  'index': '58',
+  'isHot': '0',
+  'airPortCode': 'LCX',
+  'airPortName': '龙岩冠豸山机场',
+  'airPortPinYing': 'LIANCHENG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LCX',
+  'cityName': '连城',
+  'cityPinYin': 'LIANCHENG'
+}, {
+  'index': '59',
+  'isHot': '0',
+  'airPortCode': 'WUS',
+  'airPortName': '武夷山机场',
+  'airPortPinYing': 'WUYISHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WUS',
+  'cityName': '武夷山',
+  'cityPinYin': 'WUYISHAN'
+}, {
+  'index': '60',
+  'isHot': '1',
+  'airPortCode': 'KHN',
+  'airPortName': '昌北国际机场',
+  'airPortPinYing': 'NANCHANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KHN',
+  'cityName': '南昌',
+  'cityPinYin': 'NANCHANG'
+}, {
+  'index': '61',
+  'isHot': '0',
+  'airPortCode': 'KOW',
+  'airPortName': '黄金机场',
+  'airPortPinYing': 'GANZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KOW',
+  'cityName': '赣州',
+  'cityPinYin': 'GANZHOU'
+}, {
+  'index': '62',
+  'isHot': '0',
+  'airPortCode': 'JIU',
+  'airPortName': '庐山机场',
+  'airPortPinYing': 'JIUJIANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JIU',
+  'cityName': '九江',
+  'cityPinYin': 'JIUJIANG'
+}, {
+  'index': '63',
+  'isHot': '0',
+  'airPortCode': 'JDZ',
+  'airPortName': '罗家机场',
+  'airPortPinYing': 'JINGDEZHEN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JDZ',
+  'cityName': '景德镇',
+  'cityPinYin': 'JINGDEZHEN'
+}, {
+  'index': '64',
+  'isHot': '0',
+  'airPortCode': 'JGS',
+  'airPortName': '井冈山机场',
+  'airPortPinYing': 'JINGGANGSHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JGS',
+  'cityName': '井冈山',
+  'cityPinYin': 'JINGGANGSHAN'
+}, {
+  'index': '65',
+  'isHot': '0',
+  'airPortCode': 'YIC',
+  'airPortName': '明月山机场',
+  'airPortPinYing': 'YICHUN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YIC',
+  'cityName': '宜春',
+  'cityPinYin': 'YICHUN'
+}, {
+  'index': '66',
+  'isHot': '0',
+  'airPortCode': 'URC',
+  'airPortName': '地窝堡国际机场',
+  'airPortPinYing': 'WULUMUQI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'URC',
+  'cityName': '乌鲁木齐',
+  'cityPinYin': 'WULUMUQI'
+}, {
+  'index': '67',
+  'isHot': '0',
+  'airPortCode': 'AKU',
+  'airPortName': '温宿机场',
+  'airPortPinYing': 'AKSU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'AKU',
+  'cityName': '阿克苏',
+  'cityPinYin': 'AKSU'
+}, {
+  'index': '68',
+  'isHot': '0',
+  'airPortCode': 'KHG',
+  'airPortName': '喀什机场',
+  'airPortPinYing': 'KASHI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KHG',
+  'cityName': '喀什',
+  'cityPinYin': 'KASHI'
+}, {
+  'index': '69',
+  'isHot': '0',
+  'airPortCode': 'YIN',
+  'airPortName': '伊宁机场',
+  'airPortPinYing': 'YINING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YIN',
+  'cityName': '伊宁',
+  'cityPinYin': 'YINING'
+}, {
+  'index': '70',
+  'isHot': '0',
+  'airPortCode': 'TCG',
+  'airPortName': '塔城机场',
+  'airPortPinYing': 'TACHENG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TCG',
+  'cityName': '塔城',
+  'cityPinYin': 'TACHENG'
+}, {
+  'index': '71',
+  'isHot': '0',
+  'airPortCode': 'KCA',
+  'airPortName': '库车机场',
+  'airPortPinYing': 'KUCHE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KCA',
+  'cityName': '库车',
+  'cityPinYin': 'KUCHE'
+}, {
+  'index': '72',
+  'isHot': '0',
+  'airPortCode': 'IQM',
+  'airPortName': '且末机场',
+  'airPortPinYing': 'QIEMO',
+  'countryCode': 'CN',
+  'airPortCodeE': 'IQM',
+  'cityName': '且末',
+  'cityPinYin': 'QIEMO'
+}, {
+  'index': '73',
+  'isHot': '0',
+  'airPortCode': 'HTN',
+  'airPortName': '和田机场',
+  'airPortPinYing': 'HOTAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HTN',
+  'cityName': '和田',
+  'cityPinYin': 'HOTAN'
+}, {
+  'index': '74',
+  'isHot': '0',
+  'airPortCode': 'KRL',
+  'airPortName': '库尔勒机场',
+  'airPortPinYing': 'KUERLE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KRL',
+  'cityName': '库尔勒',
+  'cityPinYin': 'KUERLE'
+}, {
+  'index': '75',
+  'isHot': '0',
+  'airPortCode': 'NLT',
+  'airPortName': '那拉提机场',
+  'airPortPinYing': 'NALUTI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NLT',
+  'cityName': '那拉提',
+  'cityPinYin': 'NALUTI'
+}, {
+  'index': '76',
+  'isHot': '0',
+  'airPortCode': 'FYN',
+  'airPortName': '富蕴机场',
+  'airPortPinYing': 'FUYUN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'FYN',
+  'cityName': '富蕴',
+  'cityPinYin': 'FUYUN'
+}, {
+  'index': '77',
+  'isHot': '0',
+  'airPortCode': 'TLQ',
+  'airPortName': '交何机场',
+  'airPortPinYing': 'TULUFAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TLQ',
+  'cityName': '吐鲁番',
+  'cityPinYin': 'TULUFAN'
+}, {
+  'index': '78',
+  'isHot': '0',
+  'airPortCode': 'AAT',
+  'airPortName': '阿勒泰机场',
+  'airPortPinYing': 'ALTAY',
+  'countryCode': 'CN',
+  'airPortCodeE': 'AAT',
+  'cityName': '阿勒泰',
+  'cityPinYin': 'ALTAY'
+}, {
+  'index': '79',
+  'isHot': '0',
+  'airPortCode': 'HMI',
+  'airPortName': '哈密机场',
+  'airPortPinYing': 'HAMI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HMI',
+  'cityName': '哈密',
+  'cityPinYin': 'HAMI'
+}, {
+  'index': '80',
+  'isHot': '0',
+  'airPortCode': 'KRY',
+  'airPortName': '克拉玛依机场',
+  'airPortPinYing': 'KARAMAY',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KRY',
+  'cityName': '克拉玛依',
+  'cityPinYin': 'KARAMAY'
+}, {
+  'index': '81',
+  'isHot': '0',
+  'airPortCode': 'KJI',
+  'airPortName': '布尔津喀纳斯机场',
+  'airPortPinYing': 'KANASI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KJI',
+  'cityName': '喀纳斯',
+  'cityPinYin': 'KANASI'
+}, {
+  'index': '82',
+  'isHot': '0',
+  'airPortCode': 'BPL',
+  'airPortName': '阿拉山口机场',
+  'airPortPinYing': 'BOLE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'BPL',
+  'cityName': '博乐',
+  'cityPinYin': 'BOLE'
+}, {
+  'index': '83',
+  'isHot': '0',
+  'airPortCode': 'CAN',
+  'airPortName': '白云国际机场',
+  'airPortPinYing': 'GUANGZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CAN',
+  'cityName': '广州',
+  'cityPinYin': 'GUANGZHOU'
+}, {
+  'index': '84',
+  'isHot': '0',
+  'airPortCode': 'SZX',
+  'airPortName': '宝安国际机场',
+  'airPortPinYing': 'SHENZHEN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SZX',
+  'cityName': '深圳',
+  'cityPinYin': 'SHENZHEN'
+}, {
+  'index': '85',
+  'isHot': '1',
+  'airPortCode': 'ZUH',
+  'airPortName': '金湾国际机场',
+  'airPortPinYing': 'ZHUHAI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ZUH',
+  'cityName': '珠海',
+  'cityPinYin': 'ZHUHAI'
+}, {
+  'index': '86',
+  'isHot': '0',
+  'airPortCode': 'SWA',
+  'airPortName': '揭阳潮汕机场',
+  'airPortPinYing': 'SHANTOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SWA',
+  'cityName': '汕头',
+  'cityPinYin': 'SHANTOU'
+}, {
+  'index': '87',
+  'isHot': '0',
+  'airPortCode': 'ZHA',
+  'airPortName': '湛江机场',
+  'airPortPinYing': 'ZHANJIANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ZHA',
+  'cityName': '湛江',
+  'cityPinYin': 'ZHANJIANG'
+}, {
+  'index': '88',
+  'isHot': '0',
+  'airPortCode': 'MXZ',
+  'airPortName': '梅县机场',
+  'airPortPinYing': 'MEIZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'MXZ',
+  'cityName': '梅州',
+  'cityPinYin': 'MEIZHOU'
+}, {
+  'index': '89',
+  'isHot': '0',
+  'airPortCode': 'FUO',
+  'airPortName': '沙堤机场',
+  'airPortPinYing': 'FOSHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'FUO',
+  'cityName': '佛山',
+  'cityPinYin': 'FOSHAN'
+}, {
+  'index': '90',
+  'isHot': '0',
+  'airPortCode': 'XIN',
+  'airPortName': '兴宁机场',
+  'airPortPinYing': 'XINGNING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'XIN',
+  'cityName': '兴宁',
+  'cityPinYin': 'XINGNING'
+}, {
+  'index': '91',
+  'isHot': '0',
+  'airPortCode': 'NNG',
+  'airPortName': '吴圩国际机场',
+  'airPortPinYing': 'NANNING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NNG',
+  'cityName': '南宁',
+  'cityPinYin': 'NANNING'
+}, {
+  'index': '92',
+  'isHot': '0',
+  'airPortCode': 'KWL',
+  'airPortName': '两江国际机场',
+  'airPortPinYing': 'GUILIN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KWL',
+  'cityName': '桂林',
+  'cityPinYin': 'GUILIN'
+}, {
+  'index': '93',
+  'isHot': '0',
+  'airPortCode': 'LZH',
+  'airPortName': '白莲机场',
+  'airPortPinYing': 'LIUZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LZH',
+  'cityName': '柳州',
+  'cityPinYin': 'LIUZHOU'
+}, {
+  'index': '94',
+  'isHot': '0',
+  'airPortCode': 'BHY',
+  'airPortName': '福成机场',
+  'airPortPinYing': 'BEIHAI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'BHY',
+  'cityName': '北海',
+  'cityPinYin': 'BEIHAI'
+}, {
+  'index': '95',
+  'isHot': '0',
+  'airPortCode': 'WUZ',
+  'airPortName': '长洲岛机场',
+  'airPortPinYing': 'WUZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WUZ',
+  'cityName': '梧州',
+  'cityPinYin': 'WUZHOU'
+}, {
+  'index': '96',
+  'isHot': '0',
+  'airPortCode': 'AEB',
+  'airPortName': '巴马机场',
+  'airPortPinYing': 'BAISE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'AEB',
+  'cityName': '百色',
+  'cityPinYin': 'BAISE'
+}, {
+  'index': '97',
+  'isHot': '1',
+  'airPortCode': 'HAK',
+  'airPortName': '美兰国际机场',
+  'airPortPinYing': 'HAIKOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HAK',
+  'cityName': '海口',
+  'cityPinYin': 'HAIKOU'
+}, {
+  'index': '98',
+  'isHot': '0',
+  'airPortCode': 'SYX',
+  'airPortName': '凤凰国际机场',
+  'airPortPinYing': 'SANYA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SYX',
+  'cityName': '三亚',
+  'cityPinYin': 'SANYA'
+}, {
+  'index': '99',
+  'isHot': '0',
+  'airPortCode': 'YXG',
+  'airPortName': '永兴岛机场',
+  'airPortPinYing': 'XISHA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YXG',
+  'cityName': '西沙',
+  'cityPinYin': 'XISHA'
+}, {
+  'index': '100',
+  'isHot': '1',
+  'airPortCode': 'WUH',
+  'airPortName': '天河国际机场',
+  'airPortPinYing': 'WUHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WUH',
+  'cityName': '武汉',
+  'cityPinYin': 'WUHAN'
+}, {
+  'index': '101',
+  'isHot': '0',
+  'airPortCode': 'YIH',
+  'airPortName': '三峡机场',
+  'airPortPinYing': 'YICHANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YIH',
+  'cityName': '宜昌',
+  'cityPinYin': 'YICHANG'
+}, {
+  'index': '102',
+  'isHot': '0',
+  'airPortCode': 'SHS',
+  'airPortName': '沙市机场',
+  'airPortPinYing': 'SHASHI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SHS',
+  'cityName': '沙市',
+  'cityPinYin': 'SHASHI'
+}, {
+  'index': '103',
+  'isHot': '0',
+  'airPortCode': 'XFN',
+  'airPortName': '襄樊机场',
+  'airPortPinYing': 'XIANGYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'XFN',
+  'cityName': '襄阳',
+  'cityPinYin': 'XIANGYANG'
+}, {
+  'index': '104',
+  'isHot': '0',
+  'airPortCode': 'ENH',
+  'airPortName': '许家坪机场',
+  'airPortPinYing': 'ENSHI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ENH',
+  'cityName': '恩施',
+  'cityPinYin': 'ENSHI'
+}, {
+  'index': '105',
+  'isHot': '1',
+  'airPortCode': 'CSX',
+  'airPortName': '黄花国际机场',
+  'airPortPinYing': 'CHANGSHA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CSX',
+  'cityName': '长沙',
+  'cityPinYin': 'CHANGSHA'
+}, {
+  'index': '106',
+  'isHot': '0',
+  'airPortCode': 'DYG',
+  'airPortName': '荷花国际机场',
+  'airPortPinYing': 'ZHANGJIAJIE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DYG',
+  'cityName': '张家界',
+  'cityPinYin': 'ZHANGJIAJIE'
+}, {
+  'index': '107',
+  'isHot': '0',
+  'airPortCode': 'CGD',
+  'airPortName': '桃花源机场',
+  'airPortPinYing': 'CHANGDE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CGD',
+  'cityName': '常德',
+  'cityPinYin': 'CHANGDE'
+}, {
+  'index': '108',
+  'isHot': '0',
+  'airPortCode': 'LLF',
+  'airPortName': '零陵机场',
+  'airPortPinYing': 'YONGZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LLF',
+  'cityName': '永州',
+  'cityPinYin': 'YONGZHOU'
+}, {
+  'index': '109',
+  'isHot': '0',
+  'airPortCode': 'HJJ',
+  'airPortName': '芷江机场',
+  'airPortPinYing': 'HUAIHUA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HJJ',
+  'cityName': '怀化',
+  'cityPinYin': 'HUAIHUA'
+}, {
+  'index': '110',
+  'isHot': '0',
+  'airPortCode': 'HNY',
+  'airPortName': '南岳机场',
+  'airPortPinYing': 'HENGYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HNY',
+  'cityName': '衡阳',
+  'cityPinYin': 'HENGYANG'
+}, {
+  'index': '111',
+  'isHot': '0',
+  'airPortCode': 'CGO',
+  'airPortName': '新郑国际机场',
+  'airPortPinYing': 'ZHENGZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CGO',
+  'cityName': '郑州',
+  'cityPinYin': 'ZHENGZHOU'
+}, {
+  'index': '112',
+  'isHot': '0',
+  'airPortCode': 'LYA',
+  'airPortName': '北郊机场',
+  'airPortPinYing': 'LUOYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LYA',
+  'cityName': '洛阳',
+  'cityPinYin': 'LUOYANG'
+}, {
+  'index': '113',
+  'isHot': '0',
+  'airPortCode': 'NNY',
+  'airPortName': '姜营机场',
+  'airPortPinYing': 'NANYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NNY',
+  'cityName': '南阳',
+  'cityPinYin': 'NANYANG'
+}, {
+  'index': '114',
+  'isHot': '0',
+  'airPortCode': 'AYN',
+  'airPortName': '安阳机场',
+  'airPortPinYing': 'ANYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'AYN',
+  'cityName': '安阳',
+  'cityPinYin': 'ANYANG'
+}, {
+  'index': '115',
+  'isHot': '0',
+  'airPortCode': 'CKG',
+  'airPortName': '江北国际机场',
+  'airPortPinYing': 'CHONGQING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CKG',
+  'cityName': '重庆',
+  'cityPinYin': 'CHONGQING'
+}, {
+  'index': '116',
+  'isHot': '1',
+  'airPortCode': 'WXN',
+  'airPortName': '五桥机场',
+  'airPortPinYing': 'WANZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WXN',
+  'cityName': '万州',
+  'cityPinYin': 'WANZHOU'
+}, {
+  'index': '117',
+  'isHot': '0',
+  'airPortCode': 'JIQ',
+  'airPortName': '黔江舟白机场',
+  'airPortPinYing': 'QIANJIANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JIQ',
+  'cityName': '黔江',
+  'cityPinYin': 'QIANJIANG'
+}, {
+  'index': '118',
+  'isHot': '0',
+  'airPortCode': 'CTU',
+  'airPortName': '双流国际机场',
+  'airPortPinYing': 'CHENGDU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CTU',
+  'cityName': '成都',
+  'cityPinYin': 'CHENGDU'
+}, {
+  'index': '119',
+  'isHot': '0',
+  'airPortCode': 'LZO',
+  'airPortName': '蓝田机场',
+  'airPortPinYing': 'LUZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LZO',
+  'cityName': '泸州',
+  'cityPinYin': 'LUZHOU'
+}, {
+  'index': '120',
+  'isHot': '0',
+  'airPortCode': 'JZH',
+  'airPortName': '黄龙机场',
+  'airPortPinYing': 'JIUZHAIGOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JZH',
+  'cityName': '九寨沟',
+  'cityPinYin': 'JIUZHAIGOU'
+}, {
+  'index': '121',
+  'isHot': '0',
+  'airPortCode': 'PZI',
+  'airPortName': '保安营机场',
+  'airPortPinYing': 'PANZHIHUA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'PZI',
+  'cityName': '攀枝花',
+  'cityPinYin': 'PANZHIHUA'
+}, {
+  'index': '122',
+  'isHot': '0',
+  'airPortCode': 'NAO',
+  'airPortName': '高坪机场',
+  'airPortPinYing': 'NANCONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NAO',
+  'cityName': '南充',
+  'cityPinYin': 'NANCONG'
+}, {
+  'index': '123',
+  'isHot': '0',
+  'airPortCode': 'YBP',
+  'airPortName': '五粮液机场',
+  'airPortPinYing': 'YIBIN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YBP',
+  'cityName': '宜宾',
+  'cityPinYin': 'YIBIN'
+}, {
+  'index': '124',
+  'isHot': '1',
+  'airPortCode': 'MIG',
+  'airPortName': '南郊机场',
+  'airPortPinYing': 'MIANYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'MIG',
+  'cityName': '绵阳',
+  'cityPinYin': 'MIANYANG'
+}, {
+  'index': '125',
+  'isHot': '0',
+  'airPortCode': 'XIC',
+  'airPortName': '青山机场',
+  'airPortPinYing': 'XICHANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'XIC',
+  'cityName': '西昌',
+  'cityPinYin': 'XICHANG'
+}, {
+  'index': '126',
+  'isHot': '0',
+  'airPortCode': 'GYS',
+  'airPortName': '盘龙机场',
+  'airPortPinYing': 'GUANGYUAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'GYS',
+  'cityName': '广元',
+  'cityPinYin': 'GUANGYUAN'
+}, {
+  'index': '127',
+  'isHot': '0',
+  'airPortCode': 'DAX',
+  'airPortName': '河市机场',
+  'airPortPinYing': 'DAXIAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DAX',
+  'cityName': '达州',
+  'cityPinYin': 'DAXIAN'
+}, {
+  'index': '128',
+  'isHot': '0',
+  'airPortCode': 'GHN',
+  'airPortName': '广汉机场',
+  'airPortPinYing': 'GUANGHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'GHN',
+  'cityName': '广汉',
+  'cityPinYin': 'GUANGHAN'
+}, {
+  'index': '129',
+  'isHot': '0',
+  'airPortCode': 'KMG',
+  'airPortName': '长水国际机场',
+  'airPortPinYing': 'KUNMING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KMG',
+  'cityName': '昆明',
+  'cityPinYin': 'KUNMING'
+}, {
+  'index': '130',
+  'isHot': '0',
+  'airPortCode': 'LJG',
+  'airPortName': '三义国际机场',
+  'airPortPinYing': 'LIJIANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LJG',
+  'cityName': '丽江',
+  'cityPinYin': 'LIJIANG'
+}, {
+  'index': '131',
+  'isHot': '0',
+  'airPortCode': 'LUM',
+  'airPortName': '潞西芒市机场',
+  'airPortPinYing': 'LUXI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LUM',
+  'cityName': '芒市',
+  'cityPinYin': 'MANGSHI'
+}, {
+  'index': '132',
+  'isHot': '0',
+  'airPortCode': 'BSD',
+  'airPortName': '云瑞机场',
+  'airPortPinYing': 'BAOSHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'BSD',
+  'cityName': '保山',
+  'cityPinYin': 'BAOSHAN'
+}, {
+  'index': '133',
+  'isHot': '0',
+  'airPortCode': 'DIG',
+  'airPortName': '迪庆香格里拉机场',
+  'airPortPinYing': 'XIANGGELILA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DIG',
+  'cityName': '香格里拉',
+  'cityPinYin': 'XIANGGELILA'
+}, {
+  'index': '134',
+  'isHot': '0',
+  'airPortCode': 'JHG',
+  'airPortName': '嘎洒国际机场',
+  'airPortPinYing': 'JINGHONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JHG',
+  'cityName': '西双版纳',
+  'cityPinYin': 'JINGHONG'
+}, {
+  'index': '135',
+  'isHot': '0',
+  'airPortCode': 'WNH',
+  'airPortName': '普者黑机场',
+  'airPortPinYing': 'WENSHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'WNH',
+  'cityName': '文山',
+  'cityPinYin': 'WENSHAN'
+}, {
+  'index': '136',
+  'isHot': '0',
+  'airPortCode': 'DLU',
+  'airPortName': '大理机场',
+  'airPortPinYing': 'DALI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DLU',
+  'cityName': '大理',
+  'cityPinYin': 'DALI'
+}, {
+  'index': '137',
+  'isHot': '0',
+  'airPortCode': 'SYM',
+  'airPortName': '思茅机场',
+  'airPortPinYing': 'SIMAO',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SYM',
+  'cityName': '普洱',
+  'cityPinYin': 'PUER'
+}, {
+  'index': '138',
+  'isHot': '0',
+  'airPortCode': 'LNJ',
+  'airPortName': '临沧机场',
+  'airPortPinYing': 'LINCANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LNJ',
+  'cityName': '临沧',
+  'cityPinYin': 'LINCANG'
+}, {
+  'index': '139',
+  'isHot': '0',
+  'airPortCode': 'ZAT',
+  'airPortName': '昭通机场',
+  'airPortPinYing': 'ZHAOTONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ZAT',
+  'cityName': '昭通',
+  'cityPinYin': 'ZHAOTONG'
+}, {
+  'index': '140',
+  'isHot': '0',
+  'airPortCode': 'TCZ',
+  'airPortName': '驼峰机场',
+  'airPortPinYing': 'TENGCHOGN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TCZ',
+  'cityName': '腾冲',
+  'cityPinYin': 'TENGCHOGN'
+}, {
+  'index': '141',
+  'isHot': '1',
+  'airPortCode': 'KWE',
+  'airPortName': '龙洞堡国际机场',
+  'airPortPinYing': 'GUIYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KWE',
+  'cityName': '贵阳',
+  'cityPinYin': 'GUIYANG'
+}, {
+  'index': '142',
+  'isHot': '1',
+  'airPortCode': 'TEN',
+  'airPortName': '凤凰机场',
+  'airPortPinYing': 'TONGREN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TEN',
+  'cityName': '铜仁',
+  'cityPinYin': 'TONGREN'
+}, {
+  'index': '143',
+  'isHot': '0',
+  'airPortCode': 'AVA',
+  'airPortName': '黄果树机场',
+  'airPortPinYing': 'ANSHUN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'AVA',
+  'cityName': '安顺',
+  'cityPinYin': 'ANSHUN'
+}, {
+  'index': '144',
+  'isHot': '0',
+  'airPortCode': 'ACX',
+  'airPortName': '万峰林机场',
+  'airPortPinYing': 'XICHANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ACX',
+  'cityName': '兴义',
+  'cityPinYin': 'XICHANG'
+}, {
+  'index': '145',
+  'isHot': '0',
+  'airPortCode': 'HZH',
+  'airPortName': '黎平机场',
+  'airPortPinYing': 'LIPING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HZH',
+  'cityName': '黎平',
+  'cityPinYin': 'LIPING'
+}, {
+  'index': '146',
+  'isHot': '0',
+  'airPortCode': 'ZYI',
+  'airPortName': '新舟机场',
+  'airPortPinYing': 'ZUNYI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ZYI',
+  'cityName': '遵义',
+  'cityPinYin': 'ZUNYI'
+}, {
+  'index': '147',
+  'isHot': '0',
+  'airPortCode': 'LLB',
+  'airPortName': '荔波机场',
+  'airPortPinYing': 'LIBO',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LLB',
+  'cityName': '荔波',
+  'cityPinYin': 'LIBO'
+}, {
+  'index': '149',
+  'isHot': '0',
+  'airPortCode': 'LXA',
+  'airPortName': '贡嘎国际机场',
+  'airPortPinYing': 'LASHA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LXA',
+  'cityName': '拉萨',
+  'cityPinYin': 'LASHA'
+}, {
+  'index': '150',
+  'isHot': '0',
+  'airPortCode': 'BPX',
+  'airPortName': '邦达机场',
+  'airPortPinYing': 'CHANGDU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'BPX',
+  'cityName': '昌都',
+  'cityPinYin': 'CHANGDU'
+}, {
+  'index': '151',
+  'isHot': '0',
+  'airPortCode': 'LZY',
+  'airPortName': '米林机场',
+  'airPortPinYing': 'LINZHI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LZY',
+  'cityName': '林芝',
+  'cityPinYin': 'LINZHI'
+}, {
+  'index': '152',
+  'isHot': '0',
+  'airPortCode': 'NGQ',
+  'airPortName': '昆莎机场',
+  'airPortPinYing': 'KUNSHA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NGQ',
+  'cityName': '阿里',
+  'cityPinYin': 'ALI'
+}, {
+  'index': '153',
+  'isHot': '1',
+  'airPortCode': 'HFE',
+  'airPortName': '新桥国际机场',
+  'airPortPinYing': 'HEFEI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HFE',
+  'cityName': '合肥',
+  'cityPinYin': 'HEFEI'
+}, {
+  'index': '154',
+  'isHot': '0',
+  'airPortCode': 'TXN',
+  'airPortName': '屯溪国际机场',
+  'airPortPinYing': 'HUANGSHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TXN',
+  'cityName': '黄山',
+  'cityPinYin': 'HUANGSHAN'
+}, {
+  'index': '155',
+  'isHot': '0',
+  'airPortCode': 'AQG',
+  'airPortName': '天柱山机场',
+  'airPortPinYing': 'ANQING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'AQG',
+  'cityName': '安庆',
+  'cityPinYin': 'ANQING'
+}, {
+  'index': '156',
+  'isHot': '0',
+  'airPortCode': 'FUG',
+  'airPortName': '西关国际机场',
+  'airPortPinYing': 'FUYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'FUG',
+  'cityName': '阜阳',
+  'cityPinYin': 'FUYANG'
+}, {
+  'index': '157',
+  'isHot': '0',
+  'airPortCode': 'SHE',
+  'airPortName': '桃仙国际机场',
+  'airPortPinYing': 'SHENYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'SHE',
+  'cityName': '沈阳',
+  'cityPinYin': 'SHENYANG'
+}, {
+  'index': '158',
+  'isHot': '0',
+  'airPortCode': 'DLC',
+  'airPortName': '周水子国际机场',
+  'airPortPinYing': 'DALIAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DLC',
+  'cityName': '大连',
+  'cityPinYin': 'DALIAN'
+}, {
+  'index': '159',
+  'isHot': '0',
+  'airPortCode': 'JNZ',
+  'airPortName': '小岭子机场',
+  'airPortPinYing': 'JINZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JNZ',
+  'cityName': '锦州',
+  'cityPinYin': 'JINZHOU'
+}, {
+  'index': '160',
+  'isHot': '0',
+  'airPortCode': 'DDG',
+  'airPortName': '浪头国际机场',
+  'airPortPinYing': 'DANDONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DDG',
+  'cityName': '丹东',
+  'cityPinYin': 'DANDONG'
+}, {
+  'index': '161',
+  'isHot': '0',
+  'airPortCode': 'CHG',
+  'airPortName': '朝阳机场',
+  'airPortPinYing': 'CHAOYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CHG',
+  'cityName': '朝阳',
+  'cityPinYin': 'CHAOYANG'
+}, {
+  'index': '162',
+  'isHot': '0',
+  'airPortCode': 'CNI',
+  'airPortName': '大长山岛机场',
+  'airPortPinYing': 'CHANGHAI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CNI',
+  'cityName': '长海',
+  'cityPinYin': 'CHANGHAI'
+}, {
+  'index': '163',
+  'isHot': '0',
+  'airPortCode': 'CGQ',
+  'airPortName': '龙嘉国际机场',
+  'airPortPinYing': 'CHANGCHUN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'CGQ',
+  'cityName': '长春',
+  'cityPinYin': 'CHANGCHUN'
+}, {
+  'index': '164',
+  'isHot': '0',
+  'airPortCode': 'JIL',
+  'airPortName': '二台子机场',
+  'airPortPinYing': 'JILIN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JIL',
+  'cityName': '吉林',
+  'cityPinYin': 'JILIN'
+}, {
+  'index': '165',
+  'isHot': '0',
+  'airPortCode': 'YNJ',
+  'airPortName': '朝阳川国际机场',
+  'airPortPinYing': 'YANJI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YNJ',
+  'cityName': '延吉',
+  'cityPinYin': 'YANJI'
+}, {
+  'index': '166',
+  'isHot': '0',
+  'airPortCode': 'TNH',
+  'airPortName': '三源浦机场',
+  'airPortPinYing': 'TONGHUA',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TNH',
+  'cityName': '通化',
+  'cityPinYin': 'TONGHUA'
+}, {
+  'index': '167',
+  'isHot': '0',
+  'airPortCode': 'NBS',
+  'airPortName': '长白山机场',
+  'airPortPinYing': 'CHANGBAISHAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NBS',
+  'cityName': '长白山',
+  'cityPinYin': 'CHANGBAISHAN'
+}, {
+  'index': '168',
+  'isHot': '0',
+  'airPortCode': 'HRB',
+  'airPortName': '太平国际机场',
+  'airPortPinYing': 'HarbinTaiping',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HRB',
+  'cityName': '哈尔滨',
+  'cityPinYin': 'Harbin'
+}, {
+  'index': '169',
+  'isHot': '0',
+  'airPortCode': 'NDG',
+  'airPortName': '三家子国际机场',
+  'airPortPinYing': 'QIQIHAER',
+  'countryCode': 'CN',
+  'airPortCodeE': 'NDG',
+  'cityName': '齐齐哈尔',
+  'cityPinYin': 'QIQIHAER'
+}, {
+  'index': '170',
+  'isHot': '0',
+  'airPortCode': 'JMU',
+  'airPortName': '东郊机场',
+  'airPortPinYing': 'JIAMUSI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JMU',
+  'cityName': '佳木斯',
+  'cityPinYin': 'JIAMUSI'
+}, {
+  'index': '171',
+  'isHot': '0',
+  'airPortCode': 'MDG',
+  'airPortName': '海浪机场',
+  'airPortPinYing': 'MUDANJIANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'MDG',
+  'cityName': '牡丹江',
+  'cityPinYin': 'MUDANJIANG'
+}, {
+  'index': '172',
+  'isHot': '0',
+  'airPortCode': 'HEK',
+  'airPortName': '黑河机场',
+  'airPortPinYing': 'HEIHE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HEK',
+  'cityName': '黑河',
+  'cityPinYin': 'HEIHE'
+}, {
+  'index': '173',
+  'isHot': '0',
+  'airPortCode': 'DQA',
+  'airPortName': '萨尔图机场',
+  'airPortPinYing': 'SAERTU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DQA',
+  'cityName': '大庆',
+  'cityPinYin': 'SAERTU'
+}, {
+  'index': '174',
+  'isHot': '0',
+  'airPortCode': 'YLN',
+  'airPortName': '铱兰机场',
+  'airPortPinYing': 'YILAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YLN',
+  'cityName': '铱兰',
+  'cityPinYin': 'YILAN'
+}, {
+  'index': '175',
+  'isHot': '0',
+  'airPortCode': 'JXA',
+  'airPortName': '兴凯湖机场',
+  'airPortPinYing': 'JIXI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JXA',
+  'cityName': '鸡西',
+  'cityPinYin': 'JIXI'
+}, {
+  'index': '176',
+  'isHot': '0',
+  'airPortCode': 'OHE',
+  'airPortName': '古莲机场',
+  'airPortPinYing': 'MOHE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'OHE',
+  'cityName': '漠河',
+  'cityPinYin': 'MOHE'
+}, {
+  'index': '177',
+  'isHot': '0',
+  'airPortCode': 'JGD',
+  'airPortName': '大兴安岭加格达奇机场',
+  'airPortPinYing': 'JAIGEDAQI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JGD',
+  'cityName': '加格达奇',
+  'cityPinYin': 'JIAGEDAQI'
+}, {
+  'index': '178',
+  'isHot': '0',
+  'airPortCode': 'LDS',
+  'airPortName': '林都机场',
+  'airPortPinYing': 'YICHUN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LDS',
+  'cityName': '伊春',
+  'cityPinYin': 'YICHUN'
+}, {
+  'index': '180',
+  'isHot': '1',
+  'airPortCode': 'XIY',
+  'airPortName': '咸阳国际机场',
+  'airPortPinYing': 'XIAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'XIY',
+  'cityName': '西安',
+  'cityPinYin': 'XIAN'
+}, {
+  'index': '181',
+  'isHot': '0',
+  'airPortCode': 'HZG',
+  'airPortName': '城固机场',
+  'airPortPinYing': 'HANZHONG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'HZG',
+  'cityName': '汉中',
+  'cityPinYin': 'HANZHONG'
+}, {
+  'index': '182',
+  'isHot': '0',
+  'airPortCode': 'ENY',
+  'airPortName': '二十里铺机场',
+  'airPortPinYing': 'YANAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ENY',
+  'cityName': '延安',
+  'cityPinYin': 'YANAN'
+}, {
+  'index': '183',
+  'isHot': '0',
+  'airPortCode': 'UYN',
+  'airPortName': '榆阳机场',
+  'airPortPinYing': 'YULIN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'UYN',
+  'cityName': '榆林',
+  'cityPinYin': 'YULIN'
+}, {
+  'index': '184',
+  'isHot': '0',
+  'airPortCode': 'AKA',
+  'airPortName': '富强机场',
+  'airPortPinYing': 'ANKANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'AKA',
+  'cityName': '安康',
+  'cityPinYin': 'ANKANG'
+}, {
+  'index': '185',
+  'isHot': '0',
+  'airPortCode': 'LHW',
+  'airPortName': '中川国际机场',
+  'airPortPinYing': 'LANZHOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'LHW',
+  'cityName': '兰州',
+  'cityPinYin': 'LANZHOU'
+}, {
+  'index': '186',
+  'isHot': '0',
+  'airPortCode': 'DNH',
+  'airPortName': '莫高煌机场',
+  'airPortPinYing': 'DUNHUANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'DNH',
+  'cityName': '敦煌',
+  'cityPinYin': 'DUNHUANG'
+}, {
+  'index': '187',
+  'isHot': '0',
+  'airPortCode': 'JGN',
+  'airPortName': '嘉峪关机场',
+  'airPortPinYing': 'JIAYUGUAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JGN',
+  'cityName': '嘉裕关',
+  'cityPinYin': 'JIAYUGUAN'
+}, {
+  'index': '188',
+  'isHot': '0',
+  'airPortCode': 'IQN',
+  'airPortName': '庆阳机场',
+  'airPortPinYing': 'QINGYANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'IQN',
+  'cityName': '庆阳',
+  'cityPinYin': 'QINGYANG'
+}, {
+  'index': '189',
+  'isHot': '0',
+  'airPortCode': 'THQ',
+  'airPortName': '甘肃天水机场',
+  'airPortPinYing': 'TIANSHUI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'THQ',
+  'cityName': '天水',
+  'cityPinYin': 'TIANSHUI'
+}, {
+  'index': '190',
+  'isHot': '0',
+  'airPortCode': 'JIC',
+  'airPortName': '金昌机场',
+  'airPortPinYing': 'JINCHANG',
+  'countryCode': 'CN',
+  'airPortCodeE': 'JIC',
+  'cityName': '金昌',
+  'cityPinYin': 'JINCHANG'
+}, {
+  'index': '191',
+  'isHot': '0',
+  'airPortCode': 'YZY',
+  'airPortName': '甘州机场',
+  'airPortPinYing': 'ZHANGYE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'YZY',
+  'cityName': '张掖',
+  'cityPinYin': 'ZHANGYE'
+}, {
+  'index': '192',
+  'isHot': '0',
+  'airPortCode': 'XNN',
+  'airPortName': '曹家堡机场',
+  'airPortPinYing': 'XINING',
+  'countryCode': 'CN',
+  'airPortCodeE': 'XNN',
+  'cityName': '西宁',
+  'cityPinYin': 'XINING'
+}, {
+  'index': '193',
+  'isHot': '0',
+  'airPortCode': 'GOQ',
+  'airPortName': '格尔木机场',
+  'airPortPinYing': 'GOLMUD',
+  'countryCode': 'CN',
+  'airPortCodeE': 'GOQ',
+  'cityName': '格尔木',
+  'cityPinYin': 'GOLMUD'
+}, {
+  'index': '194',
+  'isHot': '0',
+  'airPortCode': 'INC',
+  'airPortName': '河东国际机场',
+  'airPortPinYing': 'YINCHUAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'INC',
+  'cityName': '银川',
+  'cityPinYin': 'YINCHUAN'
+}, {
+  'index': '195',
+  'isHot': '0',
+  'airPortCode': 'ZHY',
+  'airPortName': '香山机场',
+  'airPortPinYing': 'ZHONGWEI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ZHY',
+  'cityName': '中卫',
+  'cityPinYin': 'ZHONGWEI'
+}, {
+  'index': '197',
+  'isHot': '1',
+  'airPortCode': 'TSN',
+  'airPortName': '滨海国际机场',
+  'airPortPinYing': 'TIANJIN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'TSN',
+  'cityName': '天津',
+  'cityPinYin': 'TIANJIN'
+}, {
+  'index': '198',
+  'isHot': '0',
+  'airPortCode': 'BPE',
+  'airPortName': '北戴河国际机场',
+  'airPortPinYing': 'QINGHUANGDAO',
+  'countryCode': 'CN',
+  'airPortCodeE': 'BPE',
+  'cityName': '秦皇岛',
+  'cityPinYin': 'QINHUANGDAO'
+}, {
+  'index': '199',
+  'isHot': '0',
+  'airPortCode': 'ZQZ',
+  'airPortName': '宁远机场',
+  'airPortPinYing': 'ZHANGJIAKOU',
+  'countryCode': 'CN',
+  'airPortCodeE': 'ZQZ',
+  'cityName': '张家口',
+  'cityPinYin': 'ZHANGJIAKOU'
+}, {
+  'index': '200',
+  'isHot': '0',
+  'airPortCode': 'GYU',
+  'airPortName': '六盘山机场',
+  'airPortPinYing': 'GUYUAN',
+  'countryCode': 'CN',
+  'airPortCodeE': 'GYU',
+  'cityName': '固原',
+  'cityPinYin': 'GUYUAN'
+}, {
+  'index': '201',
+  'isHot': '1',
+  'airPortCode': 'KJH',
+  'airPortName': '黄平机场',
+  'airPortPinYing': 'KAILI',
+  'countryCode': 'CN',
+  'airPortCodeE': 'KJH',
+  'cityName': '凯里',
+  'cityPinYin': 'KAILI'
+}, {
+  'index': '202',
+  'isHot': '1',
+  'airPortCode': 'BFJ',
+  'airPortName': '飞雄机场',
+  'airPortPinYing': 'BIJIE',
+  'countryCode': 'CN',
+  'airPortCodeE': 'BFJ',
+  'cityName': '毕节',
+  'cityPinYin': 'BIJIE'
+}]
+export default airPortList

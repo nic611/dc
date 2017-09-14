@@ -1,0 +1,38 @@
+@import url(../../../assets/css/config.css);
+
+.orderhistory-tab{
+  user-select: none;
+  
+  &-header{
+    background-color: $color-font-light;
+
+    & div{
+      color: $color-font-base;
+      text-align: center;
+      line-height: 1.1rem;
+      height: 1.1rem;
+      margin: 0 5%;
+      box-sizing: border-box;
+
+      &.active{
+        border-bottom: 3px solid $color-accent;
+      }
+    }
+  }
+  &-payment{
+    & div{
+      box-sizing: border-box;
+      text-align: center;
+      margin: 0.25rem 0;
+      border-left: 1px solid $color-bar-light-font;
+
+      &:first-of-type{
+        border-left: 1px solid $color-bg;
+      }
+      &.active{
+        color: $color-accent;
+        font-weight: 600;
+      }
+    }
+  }
+}

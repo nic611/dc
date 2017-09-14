@@ -1,0 +1,124 @@
+@import url(config.css);
+/* 定义一些字体大小从 10px-40px 间隔2px */
+@for $i from 10 to 80 by 2 {
+  .f-$i { @mixin fontSize $i; }
+}
+.f-b{font-weight: bold;}
+/* 定义一些图标尺寸，从10px-100px 间隔2px */
+@for $i from 10 to 100 by 2 {
+.icon-$i,.icon-$i svg { width: calc(0.01rem * $i); height: calc(0.01rem * $i);}
+}
+/* 定义一些margin和padding 从5px-100px 间隔5px */
+@for $i from 5 to 100 by 5 {
+.m-$i {margin: calc(0.01rem * $i);}
+.m-v-$i {margin-top: calc(0.01rem * $i);margin-bottom: calc(0.01rem * $i);}
+.m-h-$i {margin-left: calc(0.01rem * $i);margin-right: calc(0.01rem * $i);}
+.m-t-$i {margin-top: calc(0.01rem * $i);}
+.m-b-$i {margin-bottom: calc(0.01rem * $i);}
+.m-l-$i {margin-left: calc(0.01rem * $i);}
+.m-r-$i {margin-right: calc(0.01rem * $i);}
+.p-$i {padding: calc(0.01rem * $i);}
+.p-v-$i {padding-top: calc(0.01rem * $i);padding-bottom: calc(0.01rem * $i);}
+.p-h-$i {padding-left: calc(0.01rem * $i);padding-right: calc(0.01rem * $i);}
+.p-t-$i {padding-top: calc(0.01rem * $i);}
+.p-b-$i {padding-bottom: calc(0.01rem * $i);}
+.p-l-$i {padding-left: calc(0.01rem * $i);}
+.p-r-$i {padding-right: calc(0.01rem * $i);}
+}
+@for $i from 5 to 100 by 5{
+.br-$i {border-radius: calc(0.01rem * $i)}
+}
+*{padding:0;margin: 0;}
+a, abbr, address, b, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, samp, small, span, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, ul, var{
+  max-height:1000rem; /*解决X5内核浏览器有些字体被莫名放大的问题*/
+}
+img {display: block; max-width: 100%;}
+input{outline: none;}
+li{list-style: none;}
+
+.bg-opacity{
+ background-color: rgba(255,255,255,0.8);
+}
+.bg-white{
+  background-color: $color-white;
+}
+.bg-accent{
+  background-color: $color-accent;
+}
+.a-c{
+  text-align: center;
+}
+.a-l{
+  text-align: left;
+}
+.a-r{
+  text-align: right;
+}
+.c-primary{
+  color: $color-primary;
+}
+.c-accent{
+  color: $color-accent
+}
+body {
+  //font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  @mixin fontSize 12;
+  color:$color-font-base;
+  background-color: $color-bg;
+}
+.f-dark{
+  color:$color-font-dark
+}
+.f-w-bold{
+  font-weight: bold;
+}
+.f-w-light{
+  font-weight: 300;
+}
+.loading{
+  background-color: $color-accent;
+  height: 2px;
+  position: fixed;
+}
+
+.app {
+  height: 100vh;
+}
+.app-content{
+  overflow-y: auto;
+  margin-bottom: 1.45rem;
+  -webkit-overflow-scrolling: touch;
+}
+.app-content.noFooterBar{
+  margin-bottom: 0;
+}
+.main-view{
+  position: relative;
+  height: 100%;
+  > div{
+    height: calc(100vh - 1.3rem - 1.45rem - 1px);
+  }
+}
+.main-view.noFooterBar{
+  position: relative;
+  height: 100%;
+  > div{
+    height: calc(100vh - 1.3rem);
+  }
+}
+.btn{
+  @mixin fontSize 16;
+  text-align: center;
+  line-height: 1.45rem;
+  height: 1.45rem;
+  color: $color-white;
+  background-color: $color-accent;
+}
+.btn-fixed{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.tab-bottom{
+  border-radius: 0 0 0.15rem 0.15rem;
+}

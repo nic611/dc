@@ -1,0 +1,44 @@
+@keyframes firstpoint {
+  0% {color: rgb(0, 0, 0);}
+  1% {color: rgb(180, 180, 180);}
+  24% {color: rgb(180, 180, 180);}
+  25% {color: rgb(0, 0, 0);}
+}
+@keyframes secondpoint {
+  0% {color: rgb(0, 0, 0);}
+  1% {color: rgb(180, 180, 180);}
+  49% {color: rgb(180, 180, 180);}
+  50% {color: rgb(0, 0, 0);}
+}
+@keyframes thirdpoint {
+  0% {color: rgb(0, 0, 0);}
+  1% {color: rgb(180, 180, 180);}
+  74% {color: rgb(180, 180, 180);}
+  75% {color: rgb(0, 0, 0);}
+}
+.loading-tips{
+	position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(180, 180, 180, 0.3);
+
+  &>div{
+    width: 40%;
+    height: 2rem;
+    background-color: rgb(180, 180, 180);
+  }
+  &.hidden{
+    display: none;
+  }
+  &-animation1{
+    animation: firstpoint 3s infinite;
+  }
+  &-animation2{
+    animation: secondpoint 3s infinite;
+  }
+  &-animation3{
+    animation: thirdpoint 3s infinite;
+  }
+}

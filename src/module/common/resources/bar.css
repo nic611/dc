@@ -1,0 +1,34 @@
+@import url(../../../assets/css/config.css);
+
+.app-bar {
+  height: $app-bar-height;
+  overflow: hidden;
+  background-color: $color-primary;
+  color:$color-font-light;
+  position: relative;
+
+  .title{
+    height:$app-bar-height;
+    line-height:$app-bar-height;
+  }
+  .back-btn {
+    position: absolute;
+    top:0;
+    height:$app-bar-height;
+  }
+  .action-btn {
+    position: absolute;
+    top:0;
+    right: 0;
+    height:$app-bar-height;
+  }
+}
+.app-bottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #DCDCDC;
+  height: $footer-bar-height;
+  overflow: hidden;
+  background-color: $color-bar-light;
+}

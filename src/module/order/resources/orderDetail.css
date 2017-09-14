@@ -1,0 +1,9 @@
+.info-box div{
+  border-bottom: solid 2px #cccccc;
+}
+.info-box div:last-child{
+  border-bottom: none;
+}
+.hidden{
+  display: none;
+}

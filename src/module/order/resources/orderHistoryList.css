@@ -1,0 +1,116 @@
+@import url(../../../assets/css/config.css);
+
+.orderhistory-list{
+  box-sizing: border-box;
+  width: 97%;
+  margin: 0 auto;
+  overflow-y: auto;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  user-select: none;
+
+  &>div{
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+
+    &.hidden{
+      display: none;
+    }
+  }
+
+  &-title{
+    background-color: $color-font-light;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 0.1rem 4%;
+
+    &-left{
+      &-type{
+        color: $color-accent;
+      }
+      &-time{
+        color: $color-bar-light-font;
+      }
+    }
+
+    &-right{
+      color: $color-accent;
+      line-height: 1.1rem;
+    }
+  }
+
+  &-message{
+    color: $color-font-dark;
+    padding: 0 10%;
+    background-color: $color-font-light;
+
+    &-header{
+      height: 1rem;
+      line-height: 1rem;
+    }
+    &-body{
+      &-city{
+        width: 29%;
+        text-align: center;
+      }
+      &-icon{
+        width: 26%;
+        text-align: center;
+
+        & div{
+          width: 100%;
+          height: 1px;
+
+          &:first-of-type{
+            position: relative;
+            border-bottom: 2px solid $color-bar-light-font;
+
+            &:after{
+              content: '';
+              position: absolute;
+              right: 0.1rem;
+              bottom: -0.15rem;
+              width: 2px;
+              height: 0.4rem;
+              background: $color-bar-light-font;
+              transform: rotate(-60deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-flight{
+    background-color: $color-font-light;
+    padding: 0.3rem 0 0.2rem 4%;
+    color: $color-font-dark;
+
+    & div{
+      padding: 0 0.15rem;
+      border-right: 2px solid $color-bar-light-font;
+
+      &:last-of-type{
+        border-right: 2px solid $color-font-light;
+      }
+    }
+  }
+
+  &-button{
+    padding: 0.2rem 4%;
+    background-color: $color-font-light;
+  }
+}
+.orderhistory-nolist{
+  position: absolute;
+  top: 2.2rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #aaa;
+}
+.hidden{
+   display: none;
+}

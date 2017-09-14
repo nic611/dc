@@ -1,0 +1,85 @@
+@import url(../../../assets/css/config.css);
+.calendarH{
+  position: relative;
+  background-color: $color-primary;
+
+  .swiper-container{
+    color: $color-white;
+    @mixin fontSize 14;
+    padding: 0.25rem 0;
+  }
+  .swiper-wrapper{
+    display: flex;
+    align-items: center;
+
+    .text-prev,.text-next{
+      display: none;
+    }
+
+    .swiper-slide-prev .text-prev{
+      display: inline;
+    }
+    .swiper-slide-prev .data{
+      display: none;
+    }
+    .swiper-slide-next{
+      & div:first-of-type{
+        padding-right: 0.3rem;
+      }
+      & .text-next{
+        display: inline;
+        @mixin fontSize 13;
+      }
+    }
+    .swiper-slide-next .data{
+      display: none;
+    }
+  }
+  .slider-bg{
+    background-color: #FFFFFF;
+    border-radius: 0.15rem;
+    top: 0;
+    left: calc(33% + 0.05rem);
+    position: absolute;
+    width: 34%;
+    height: calc(100% - 0.5rem);
+    margin: 0.25rem;
+  }
+  .swiper-slide{
+    display: flex;
+    justify-content:center;
+    .SVGInline{
+      display: none;
+    }
+  }
+  .swiper-slide:first-child,.swiper-slide:last-child{
+    opacity: 0.3;
+  }
+  .swiper-slide-active{
+    color: $color-accent;
+    // background-color: #FFFFFF;
+    padding:0.2rem;
+
+    .SVGInline{
+      display: inline;
+    }
+    .data{
+      @mixin fontSize 14;
+    }
+  }
+  .prevIcon, .nextIcon{
+    position: absolute;
+    top:50%;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+  .prevIcon{
+    left: 0.2rem;
+  }
+  .nextIcon{
+    right: 0.2rem;
+  }
+  span.SVGInline.disabled{
+    opacity: 0.3
+  }
+}

@@ -1,0 +1,51 @@
+.flight-item{
+  /*width: 100%;*/
+  margin: 0.25rem 0;
+  padding: 0.3rem 0.4rem;
+  background-color: #ffffff;
+  border-bottom: solid 1px #cfcfcf;
+  border-top: solid 1px #cfcfcf;
+}
+.flight-reason-hint{
+  width: 3.3rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  background-color: #d01b25;
+  color: #ffffff;
+  margin: 0 0.45rem 0 0;
+  border-radius: 0.15rem;
+}
+.p-c{
+  color: #d01b25;
+}
+.p-h{
+  line-height: 0.8rem;
+}
+.flight-top{
+  padding-bottom: 0.3rem;
+  border-bottom: solid 1px #cfcfcf;
+}
+.flight-bottom{
+  width: 7.6rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  text-align: center;
+  margin: 0.8rem auto 0 auto;
+  background-color: #eeeded;
+  border-radius: 0.2rem;
+  color: #8a8989;
+}
+.flight-before{
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.flight-middle{
+  width: 90%;
+}
+/*.dynamic-hidden{*/
+  /*display: none;*/
+/*}*/
+.detailBar{
+  line-height: 0.6rem;
+  text-align: center;
+}

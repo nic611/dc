@@ -1,0 +1,64 @@
+@import url(../../../assets/css/config.css);
+
+.login{
+  background-image: url(../../../assets/img/loginBackground.jpg);
+  user-select: none;
+  font-family: 'Microsoft YaHei';
+
+  &-header{
+    border-bottom: 1px solid #dedede;
+
+    & div:first-of-type{
+      color: $color-accent;
+    }
+    & div:last-of-type{
+
+    }
+  }
+  &-message{
+    background-color: #ffffff;
+
+    & input{
+      height: 1.56rem;
+      border: none;
+      border-bottom: 1px solid #dedede;
+    }
+  }
+  &-keepinglogin{
+    background-color: #ffffff;
+
+    &-checkbox1.hidden{
+      display: none;
+    }
+    &-checkbox2{
+      &.hidden{
+        display: none;
+      }
+      &:after{
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        height: 0.6rem;
+        width: 0.6rem;
+        border: 2px solid #adadad;
+      }
+    }
+  }
+  &-button{
+    background-color: #ffffff;
+    padding: 0 1.1rem;
+  }
+  &-other{
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #dedede;
+
+    & a:first-of-type{
+      border-right: 2px solid #aeaeae;
+    }
+  }
+}
+a{
+  text-decoration: none;
+  color: $color-font-base;
+}

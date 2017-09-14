@@ -1,0 +1,28 @@
+@import url(../../../assets/css/config.css);
+.select-top{
+  height: 1.6rem;
+}
+.select-top-left{
+  width: 2.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  background-color: #ca403d;
+  color: #ffffff;
+}
+.separate{
+  width: 0.3rem;
+  height: 0.8rem;
+  border-left: solid 2px #b5b4b4;
+  border-right: solid 2px #b5b4b4;
+}
+.check-seat{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  background-color: $color-accent;
+  color: #FFFFFF;
+}

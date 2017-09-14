@@ -1,0 +1,36 @@
+.flight-list{
+  position: relative;
+}
+.flight-list-box{
+  border-bottom: solid 1px #FFFFFF;
+}
+.flight-list-item>div>div{
+  line-height: 0.8rem;
+}
+.item-l{
+  width: 50%;
+}
+.flight-date{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background: rgba(0 , 0 , 0 , 0.6);
+  color: #ffffff;
+  text-align: center;
+}
+.fly-ing{
+  color: #e0b832;
+}
+.fly-no{
+  color: #75ba4c;
+}
+.fly-delay{
+  color: #ca403d;
+}
+.empty{
+  width: 100%;
+  height: 1rem;
+}
