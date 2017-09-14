@@ -44,21 +44,7 @@ npm run build  #发布
 ```
 
 # 开发工具
-+ WebStorm/sublime text 3
++ VS Code
 + React Developer Tools  react开发调试工具
 + Redux DevTools redux开发调试工具   
 
-
-# 相关文档
-+ [Redux](http://cn.redux.js.org/index.html)
-+ [redux-saga](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)
-+ [flex.css](https://github.com/lzxb/flex.css/blob/master/docs/zh-ch.md) [demo](http://lzxb.name/flex.css/)
-+ [precss](https://jonathantneal.github.io/precss/)
-+ [immutableJS](http://www.cnblogs.com/samwu/p/5457031.html) [官方](http://facebook.github.io/immutable-js/docs/#/)
-+ [axios](http://www.jianshu.com/p/df464b26ae58)
-+ [es6](http://es6.ruanyifeng.com/#README)
-+ [eslint规则](https://standardjs.com/rules-zhcn.html)
-+ [moment](http://momentjs.cn/docs/)
-
-
-**为了养成良好的编码习惯和提高代码可读性，项目开启了比较严格的语法检查，请知悉。**
